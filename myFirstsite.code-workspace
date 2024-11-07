@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\font"
+		},
+		{
+			"path": "..\\img"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "myFirstsite"
+	}
+}
