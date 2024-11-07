@@ -25,6 +25,10 @@ html {
   font-family: "SourceSansPro-Bold";
   src: url(font/SourceSansPro-Bold.ttf);
 }
+@font-face {
+  font-family: "SourceSansPro-Italic";
+  src: url(font/SourceSansPro-BlackItalic.ttf);
+}
 .container {
   width: 100%;
   max-width: 1440px;
@@ -202,78 +206,96 @@ hr {
 .item .item-img img {
   width: 100%;
 }
-.item .text-group {
+.item .text-group,
+.item .text-group2 {
   height: 233px;
   display: flex;
   flex-direction: column;
-  padding: 24px;
+  padding: 24px !important;
   text-align: start;
 }
-.item .text-group .name-text span {
+.item .text-group .name-text span,
+.item .text-group2 .name-text span {
   display: flex;
   font-family: "SourceSansPro-Regular";
   font-size: 24px;
   color: #1C1C33;
   padding: 0 0 8px 0;
 }
-.item .text-group .name span {
+.item .text-group .name span,
+.item .text-group2 .name span {
   display: flex;
   font-family: "SourceSansPro-Regular";
   font-size: 17px;
   color: #4E4E65;
   padding: 0 0 15px 0;
 }
-.item .text-group .price {
+.item .text-group .price,
+.item .text-group2 .price {
   display: flex;
   gap: 10px;
 }
-.item .text-group .price span:nth-child(1) {
+.item .text-group .price span:nth-child(1),
+.item .text-group2 .price span:nth-child(1) {
   color: #B2B2BF;
 }
-.item .text-group .price span {
+.item .text-group .price span,
+.item .text-group2 .price span {
   display: flex;
   font-family: "SourceSansPro-Regular";
   font-size: 22px;
   color: #1C1C33;
   padding: 0 0 15px 0;
 }
-.item .text-group .more span {
+.item .text-group .more span,
+.item .text-group2 .more span {
   display: flex;
   font-family: "SourceSansPro-Regular";
   font-size: 16px;
   color: #57D9A6;
 }
 
-.contacts-group {
+.contacts-group2 {
+  padding: 144px 0;
+}
+
+.contacts-group,
+.contacts-group2 {
   display: flex;
   background-color: #1C1C33;
   align-items: center;
   gap: 48px;
 }
-.contacts-group .right .name-contacts {
+.contacts-group .right .name-contacts,
+.contacts-group2 .right .name-contacts {
   width: 513px;
   display: flex;
   flex-direction: column;
 }
-.contacts-group .right .name-contacts span {
+.contacts-group .right .name-contacts span,
+.contacts-group2 .right .name-contacts span {
   font-family: "SourceSansPro-Bold";
   font-size: 44px;
   color: #F6F6F8;
   padding: 0 0 16px 0;
 }
-.contacts-group .right .desc-contacts {
+.contacts-group .right .desc-contacts,
+.contacts-group2 .right .desc-contacts {
   padding: 50px 0 46px 0;
   width: 618px;
 }
-.contacts-group .right .desc-contacts span {
+.contacts-group .right .desc-contacts span,
+.contacts-group2 .right .desc-contacts span {
   font-family: "SourceSansPro-Regular";
   font-size: 22px;
   color: #F6F6F8;
 }
-.contacts-group .right .btn-contacts {
+.contacts-group .right .btn-contacts,
+.contacts-group2 .right .btn-contacts {
   display: flex;
 }
-.contacts-group .right .btn-contacts span {
+.contacts-group .right .btn-contacts span,
+.contacts-group2 .right .btn-contacts span {
   display: flex;
   font-family: "SourceSansPro-Regular";
   font-size: 18px;
@@ -336,6 +358,12 @@ hr {
   height: -moz-max-content;
   height: max-content;
 }
+.price-course-work .text-group2 {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 24px;
+}
 .price-course-work .text-group {
   display: flex;
   flex-direction: column;
@@ -375,4 +403,166 @@ hr {
   font-family: "SourceSansPro-Regular";
   font-size: 16px;
   color: #57D9A6;
+}
+
+.group-requaet {
+  padding: 0 0 84px 0;
+  background-color: #57D9A6;
+}
+
+.requaet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--green);
+  padding: 80px 0;
+  gap: 40px;
+}
+.requaet .icons {
+  display: flex;
+  gap: 5px;
+}
+.requaet .icons img {
+  width: 30px;
+}
+.requaet .desx {
+  width: 1006px;
+}
+.requaet .desx span {
+  font-family: "SourceSansPro-Italic";
+  font-size: 28px;
+  color: #1C1C33;
+}
+.requaet .name span {
+  font-family: "SourceSansPro-Regular";
+  font-size: 18px;
+  color: #4E4E65;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: var(--swiper-pagination-bullet-opacity, 1);
+  background: #222222 !important;
+}
+
+.swiper-pagination-bullet {
+  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 18px)) !important;
+  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 18px)) !important;
+  display: inline-block;
+  border-radius: var(--swiper-pagination-bullet-border-radius, 50%);
+  background: var(--swiper-pagination-bullet-inactive-color, #000);
+  opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.2);
+}
+
+.name-text2 span {
+  display: flex;
+  color: #4E4E65;
+  font-family: "SourceSansPro-Regular";
+  font-size: 17px;
+}
+
+.name2 span {
+  padding: 20px 0 0 0;
+  display: flex;
+  color: #1C1C33;
+  font-size: 24px;
+  font-family: "SourceSansPro-Regular";
+}
+
+.more2 span {
+  display: flex;
+  padding: 20px 0 0 0;
+  color: #4E4E65;
+  font-size: 17px;
+  font-family: "SourceSansPro-Regular";
+}
+
+.footer {
+  padding: 305px 0 144px 0git;
+  background-color: #1C1C33;
+}
+.footer .logo {
+  padding: 0 0 80px 0;
+}
+.footer .down {
+  display: flex;
+  gap: 160px;
+}
+.footer .left {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.footer .left .name span {
+  color: #F6F6F8;
+  font-size: 16px;
+  font-family: "SourceSansPro-Regular";
+}
+.footer .left ul {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.footer .left ul li {
+  list-style-type: none;
+}
+.footer .left ul li span {
+  color: #F6F6F8;
+  font-size: 18px;
+  font-family: "SourceSansPro-Regular";
+}
+.footer .follow .name span {
+  color: #F6F6F8;
+  padding: 0 0 24px 0;
+  font-family: "SourceSansPro-Bold";
+}
+.footer .follow .logos {
+  display: flex;
+  gap: 16px;
+}
+.footer .follow .logos .item {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  background-color: #F6F6F8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
