@@ -55,6 +55,7 @@ html {
   height: 105px;
   padding: 0 80px;
   align-items: center;
+  justify-content: space-between;
 }
 .header .header-main .header-logo {
   min-width: 135px;
@@ -79,9 +80,11 @@ html {
 }
 
 .banner {
-  display: flex;
   background-color: var(--blue);
-  padding: 144px 0 144px 80px;
+}
+.banner .container {
+  display: flex;
+  padding: 144px 0 144px 0;
 }
 .banner .left-banner {
   display: flex;
@@ -255,14 +258,20 @@ hr {
   color: #57D9A6;
 }
 
-.contacts-group2 {
+.contacts-group2 .container {
   padding: 144px 0;
+  display: flex;
+  align-items: center;
+  gap: 48px;
 }
 
 .contacts-group,
 .contacts-group2 {
-  display: flex;
   background-color: #1C1C33;
+}
+.contacts-group .container,
+.contacts-group2 .container {
+  display: flex;
   align-items: center;
   gap: 48px;
 }
@@ -311,7 +320,7 @@ hr {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding: 144px 0;
+  padding: 144px 0 244px 0;
   background-color: #F5F5F5;
 }
 .price-course-work .title-price {
@@ -354,12 +363,10 @@ hr {
   font-size: 18px;
 }
 .price-course-work .item {
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
 }
 .price-course-work .text-group2 {
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   padding: 24px;
@@ -515,7 +522,8 @@ body {
 }
 
 .footer {
-  padding: 305px 0 144px 0git;
+  position: relative;
+  padding: 305px 0 144px 0;
   background-color: #1C1C33;
 }
 .footer .logo {
@@ -548,9 +556,12 @@ body {
   font-size: 18px;
   font-family: "SourceSansPro-Regular";
 }
-.footer .follow .name span {
-  color: #F6F6F8;
+.footer .follow .name {
   padding: 0 0 24px 0;
+}
+.footer .follow .name span {
+  display: flex;
+  color: #F6F6F8;
   font-family: "SourceSansPro-Bold";
 }
 .footer .follow .logos {
@@ -565,4 +576,76 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.emailk {
+  position: absolute;
+  background-color: #57D9A6;
+  padding: 78px 222px;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -160%);
+}
+.emailk .name span {
+  text-wrap: nowrap;
+  color: #1C1C33;
+  font-size: 44px;
+  font-family: "SourceSansPro-Bold";
+}
+.emailk .group {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  padding: 57px 0 0 0;
+}
+.emailk .group input {
+  background-color: transparent;
+  border: 1px solid #1C1C33;
+  width: 400px;
+  height: 64px;
+  border-radius: 4px;
+  outline: none;
+  padding: 2px 0 0 20px;
+  font-size: 20px;
+  font-family: "SourceSansPro-Bold";
+  color: #1C1C33;
+}
+.emailk .group input::-moz-placeholder {
+  color: #1C1C33;
+  font-family: "SourceSansPro-Bold";
+  font-size: 20px;
+}
+.emailk .group input::placeholder {
+  color: #1C1C33;
+  font-family: "SourceSansPro-Bold";
+  font-size: 20px;
+}
+.emailk .btn {
+  cursor: pointer;
+  padding: 0;
+}
+.emailk .btn span {
+  background-color: #1C1C33;
+  padding: 19px 24px;
+  color: #57D9A6;
+  font-family: "SourceSansPro-Bold";
+  font-size: 20px;
+}
+
+.skillz {
+  background-color: #23233B;
+}
+.skillz .container {
+  padding: 16px 82px;
+}
+.skillz .naem {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 32px;
+}
+.skillz .naem span {
+  color: #B2B2BF;
+  font-family: "SourceSansPro-Regular";
+  font-size: 16px;
 }/*# sourceMappingURL=style.css.map */
